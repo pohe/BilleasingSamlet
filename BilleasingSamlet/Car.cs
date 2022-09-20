@@ -126,12 +126,12 @@ namespace BilleasingSamlet
 
         public void PrintAllInfo()
         {
-            Console.WriteLine($" Car is made from {_brand} it's {_colour}. Was made in the year {_year}. The car has the registration number{_regno}. it has Driven {mileage}, it has {_seats} Seats, it has {_doors} doors, and it weighs {_weight}");
+            Console.WriteLine($" Car is made from {_brand} it's {_colour}. Was made in the year {_year}. The car has the registration number{_regno}. it has Driven {_mileage}, it has {_seats} Seats, it has {_doors} doors, and it weighs {_weight}");
         }
 
         public override string ToString()
         {
-            return $" Car is made from {_brand} it's {_colour}. Was made in the year {_year}. The car has the registration number{_regno}. it has Driven {mileage}, it has {_seats} Seats, it has {_doors} doors, and it weighs {_weight}";
+            return $" Car is made from {_brand} it's {_colour}. Was made in the year {_year}. The car has the registration number{_regno}. it has Driven {_mileage}, it has {_seats} Seats, it has {_doors} doors, and it weighs {_weight}";
         }
 
     }
@@ -139,4 +139,3 @@ namespace BilleasingSamlet
 
 
 
-}
