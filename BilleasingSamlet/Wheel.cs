@@ -45,10 +45,10 @@ namespace BilleasingSamlet
 
         public override string ToString()
         {
-            return $"pressure: {_pressure} bar\n" +
-                              $"Type: {_type} tires\n" +
-                              $"Size: {_size}\n" +
-                              $"Weight: {_weight} kg\n";
+            return $"pressure: {_pressure} bar " +
+                              $"Type: {_type} tires " +
+                              $"Size: {_size}" +
+                              $"Weight: {_weight} kg ";
         }
     }
 
