@@ -20,6 +20,10 @@ Console.WriteLine(lc1.ToString());
 Console.WriteLine("_------------------------------END Leasing contract-----------------");
 
 
+int samletWeight = c1.TotalWeight();
+Console.WriteLine($"Vægt {samletWeight}");
+
+
 Car c2 = new Car("Volvo", "Red", 2021, "AS3434", 123, 5, 5, 2000, tire1, tire2, tire3, tire4);
 Customer cus2 = new Customer("Carina Jensen", "Vej 111", "67867868");
 

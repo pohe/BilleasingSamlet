@@ -132,14 +132,14 @@ namespace BilleasingSamlet
             _seats = seats;
             _weight = weight;
             _doors = doors;
-            _engine = new Engine("Diesel", "2 liter", 1.2, 8);
+            _engine = new Engine("Diesel", "2 liter", 1, 8);
             _tire1 = t1;
             _tire2 = t2;
             _tire3 = t3;
             _tire4 = t4;
 
-            _seat1 = new Seat("SuperBrand", "Leather", "Comfort", 0.02, "Black");
-            _seat2 = new Seat("SuperBrand", "Leather", "Comfort", 0.02, "Black");
+            _seat1 = new Seat("SuperBrand", "Leather", "Comfort", 2, "Black");
+            _seat2 = new Seat("SuperBrand", "Leather", "Comfort", 2, "Black");
 
         }
 
@@ -149,6 +149,13 @@ namespace BilleasingSamlet
             _tire2 = t2;
             _tire3 = t3;
             _tire4 = t4;
+        }
+
+        public int TotalWeight()
+        {
+
+            int samletWeight = (_tire1.Weight * 4) + (_seat1.Weight *2) + _engine.Weight + _weight;
+            return samletWeight;
         }
 
         public void PrintAllInfo()

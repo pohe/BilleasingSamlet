@@ -10,7 +10,7 @@ namespace BilleasingSamlet
     {
         private string _type;
         private string _size;
-        private double _weight;
+        private int _weight;
         private int _cylinders;
 
         public string Type
@@ -23,7 +23,7 @@ namespace BilleasingSamlet
             get { return _size; }
         }
 
-        public double Weight
+        public int Weight
         {
             get { return _weight; }
         }
@@ -33,7 +33,7 @@ namespace BilleasingSamlet
             get { return _cylinders; }
         }
 
-        public Engine(string type, string size, double weight, int cylinders)
+        public Engine(string type, string size, int weight, int cylinders)
         {
             _type = type;
             _size = size;
